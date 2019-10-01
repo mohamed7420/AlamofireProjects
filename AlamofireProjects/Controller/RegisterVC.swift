@@ -46,13 +46,22 @@ class RegisterVC : UIViewController {
             switch response.result{
                 
             case .success :
+                let alert = UIAlertController(title: "register user data", message: "Register successfully", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
                 
-                print("user register successfully , Thanks")
+                alert.addAction(action)
+                
+                self.present(alert, animated: true)
                 
             case .failure:
                 
                 print("user register successfully , Thanks")
+                let alert = UIAlertController(title: "register user data", message: "Register successfully", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
                 
+                alert.addAction(action)
+                
+                self.present(alert, animated: true)
             }
         }
         
